@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment files
+.env
+
+# VS Code
+.vscode/
+
+# MySQL exports and temporary files
+*.log
+*.tmp
+
+# Word temporary files
+~$*.docx
+
+# Operating system files
+.DS_Store
+Thumbs.db
