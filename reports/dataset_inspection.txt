@@ -1,0 +1,492 @@
+﻿DATASET INSPECTION REPORT
+File: C:\Users\Charith\Desktop\Internship Tasks\Task - 2026.07.27\Optimized-SQL-Analytics\data\raw\Datasets.xlsx
+Total worksheets: 10
+
+Worksheet names:
+- Employee_Attrition
+- Recruitment
+- Resume_NLP
+- Recommendation
+- Helpdesk
+- Bug_Severity
+- Churn
+- Fraud
+- Resource
+- Performance
+
+================================================================================
+SHEET: Employee_Attrition
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 9
+
+2. Column names
+- Employee_ID
+- Age
+- Department
+- Role
+- Years
+- Salary
+- Job_Satisfaction
+- Performance
+- Attrition
+
+3. Data types
+Employee_ID           str
+Age                 int64
+Department            str
+Role                  str
+Years               int64
+Salary              int64
+Job_Satisfaction    int64
+Performance         int64
+Attrition             str
+dtype: object
+
+4. Missing values
+Employee_ID         0
+Age                 0
+Department          0
+Role                0
+Years               0
+Salary              0
+Job_Satisfaction    0
+Performance         0
+Attrition           0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Employee_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Employee_ID: 200 unique values
+Department: ['HR', 'Engineering', 'Support', 'Data', 'QA']
+Role: ['SE', 'Manager', 'Analyst', 'QA Eng', 'Intern']
+Attrition: ['No', 'Yes']
+
+8. First five records
+  Employee_ID  Age   Department  ... Job_Satisfaction  Performance  Attrition
+0       E0001   25           HR  ...                5            4         No
+1       E0002   34  Engineering  ...                4            4         No
+2       E0003   21      Support  ...                5            2         No
+3       E0004   22  Engineering  ...                3            5         No
+4       E0005   34      Support  ...                4            2         No
+
+[5 rows x 9 columns]
+
+================================================================================
+SHEET: Recruitment
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 6
+
+2. Column names
+- Candidate_ID
+- Position
+- Experience
+- Tech_Score
+- Interview
+- Status
+
+3. Data types
+Candidate_ID      str
+Position          str
+Experience      int64
+Tech_Score      int64
+Interview       int64
+Status            str
+dtype: object
+
+4. Missing values
+Candidate_ID    0
+Position        0
+Experience      0
+Tech_Score      0
+Interview       0
+Status          0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Candidate_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Candidate_ID: 200 unique values
+Position: ['DS', 'SE', 'QA']
+Status: ['Hired', 'Rejected', 'Pending']
+
+8. First five records
+  Candidate_ID Position  Experience  Tech_Score  Interview    Status
+0        C0001       DS           4          78         83     Hired
+1        C0002       DS           6          99         63     Hired
+2        C0003       SE           7          78         69  Rejected
+3        C0004       SE           1          89         42  Rejected
+4        C0005       QA           4          77         48   Pending
+
+================================================================================
+SHEET: Resume_NLP
+================================================================================
+
+1. Dataset shape
+Rows: 100
+Columns: 3
+
+2. Column names
+- Resume_ID
+- Resume_Text
+- Label
+
+3. Data types
+Resume_ID      str
+Resume_Text    str
+Label          str
+dtype: object
+
+4. Missing values
+Resume_ID      0
+Resume_Text    0
+Label          0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Resume_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Resume_ID: 100 unique values
+Resume_Text: ['React Node', 'Testing Selenium', 'Python SQL ML', 'Java Spring']
+Label: ['Backend', 'QA', 'Data Scientist', 'Frontend']
+
+8. First five records
+  Resume_ID       Resume_Text           Label
+0      R001        React Node         Backend
+1      R002        React Node              QA
+2      R003        React Node  Data Scientist
+3      R004  Testing Selenium         Backend
+4      R005        React Node              QA
+
+================================================================================
+SHEET: Recommendation
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Candidate_ID
+- Skill_Match
+- Experience
+- Recommended
+
+3. Data types
+Candidate_ID    int64
+Skill_Match     int64
+Experience      int64
+Recommended       str
+dtype: object
+
+4. Missing values
+Candidate_ID    0
+Skill_Match     0
+Experience      0
+Recommended     0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Candidate_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Recommended: ['No', 'High', 'A', 'C', 'B', 'Medium', 'Low', 'Critical', 'Yes']
+
+8. First five records
+   Candidate_ID  Skill_Match  Experience Recommended
+0             1           76          27          No
+1             2           87          20        High
+2             3           44          16           A
+3             4           49          92           C
+4             5           95          23           B
+
+================================================================================
+SHEET: Helpdesk
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Ticket_ID
+- Priority
+- Resolution_Hours
+- Category
+
+3. Data types
+Ticket_ID           int64
+Priority            int64
+Resolution_Hours    int64
+Category              str
+dtype: object
+
+4. Missing values
+Ticket_ID           0
+Priority            0
+Resolution_Hours    0
+Category            0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Ticket_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Category: ['Low', 'A', 'Medium', 'No', 'C', 'High', 'B', 'Yes', 'Critical']
+
+8. First five records
+   Ticket_ID  Priority  Resolution_Hours Category
+0          1        19                55      Low
+1          2         8                38        A
+2          3        79                56   Medium
+3          4        26                77       No
+4          5        62                77        A
+
+================================================================================
+SHEET: Bug_Severity
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Bug_ID
+- Open_Days
+- Affected_Users
+- Severity
+
+3. Data types
+Bug_ID            int64
+Open_Days         int64
+Affected_Users    int64
+Severity            str
+dtype: object
+
+4. Missing values
+Bug_ID            0
+Open_Days         0
+Affected_Users    0
+Severity          0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Bug_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Severity: ['C', 'No', 'Medium', 'B', 'Critical', 'High', 'A', 'Low', 'Yes']
+
+8. First five records
+   Bug_ID  Open_Days  Affected_Users  Severity
+0       1         52              92         C
+1       2         66              35        No
+2       3         72              50    Medium
+3       4         91              51         B
+4       5         31              10  Critical
+
+================================================================================
+SHEET: Churn
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Customer_ID
+- Logins
+- Subscription_Months
+- Churn
+
+3. Data types
+Customer_ID            int64
+Logins                 int64
+Subscription_Months    int64
+Churn                    str
+dtype: object
+
+4. Missing values
+Customer_ID            0
+Logins                 0
+Subscription_Months    0
+Churn                  0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Customer_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Churn: ['Low', 'Critical', 'A', 'High', 'Yes', 'B', 'Medium', 'No', 'C']
+
+8. First five records
+   Customer_ID  Logins  Subscription_Months     Churn
+0            1      11                   94       Low
+1            2      91                   44  Critical
+2            3      73                   55         A
+3            4      16                   49      High
+4            5      56                   78       Yes
+
+================================================================================
+SHEET: Fraud
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Transaction_ID
+- Amount
+- Risk_Score
+- Fraud
+
+3. Data types
+Transaction_ID    int64
+Amount            int64
+Risk_Score        int64
+Fraud               str
+dtype: object
+
+4. Missing values
+Transaction_ID    0
+Amount            0
+Risk_Score        0
+Fraud             0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Transaction_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Fraud: ['No', 'Yes']
+
+8. First five records
+   Transaction_ID  Amount  Risk_Score Fraud
+0               1     125          38    No
+1               2    2208          61    No
+2               3    4052          46    No
+3               4     906          76    No
+4               5     992          28    No
+
+================================================================================
+SHEET: Resource
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Project_ID
+- Team_Size
+- Duration
+- Delay
+
+3. Data types
+Project_ID    int64
+Team_Size     int64
+Duration      int64
+Delay           str
+dtype: object
+
+4. Missing values
+Project_ID    0
+Team_Size     0
+Duration      0
+Delay         0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Project_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Delay: ['No', 'B', 'Yes', 'C', 'Low', 'Medium', 'A', 'High', 'Critical']
+
+8. First five records
+   Project_ID  Team_Size  Duration Delay
+0           1         83         1    No
+1           2         89        61     B
+2           3         48        24   Yes
+3           4         62        71   Yes
+4           5         67        95     C
+
+================================================================================
+SHEET: Performance
+================================================================================
+
+1. Dataset shape
+Rows: 200
+Columns: 4
+
+2. Column names
+- Employee_ID
+- KPI
+- Attendance
+- Rating
+
+3. Data types
+Employee_ID    int64
+KPI            int64
+Attendance     int64
+Rating           str
+dtype: object
+
+4. Missing values
+Employee_ID    0
+KPI            0
+Attendance     0
+Rating         0
+dtype: int64
+
+5. Fully duplicated rows
+Duplicate rows: 0
+
+6. Possible ID-column validation
+Employee_ID: 0 duplicate values, 0 missing values
+
+7. Unique values in categorical columns
+Rating: ['Low', 'No', 'C', 'Yes', 'Medium', 'Critical', 'B', 'High', 'A']
+
+8. First five records
+   Employee_ID  KPI  Attendance Rating
+0            1   89          47    Low
+1            2   30           6     No
+2            3   84          57      C
+3            4   71          59     No
+4            5   32           2     No
