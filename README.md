@@ -2,8 +2,6 @@
 
 ## Overview
 
-This project was developed as part of a Data Science Internship task.
-
 The objective is to design optimized SQL queries and analytical reports
 using relational database concepts and advanced SQL features.
 
